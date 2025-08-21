@@ -23,10 +23,14 @@ public class PlayerController : MonoBehaviour
             if (FootOn)
             {
                 Debug.Log("Right foot forward");
+                //wait for animation to finish before allowing next step
+                FootOn = false; // Switch to left foot for next step
             }
             else
             {
                 Debug.Log("Left foot forward");
+                //wait for animation to finish before allowing next step
+                FootOn = true; // Switch to right foot for next step
             }
         }
     }
