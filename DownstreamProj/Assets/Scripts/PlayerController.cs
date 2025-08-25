@@ -6,13 +6,14 @@ public class PlayerController : MonoBehaviour
     private bool FootOn = false; //Which foot the player should take next step with True = Right, False = Left
                                 // Start is called once before the first execution of Update after the MonoBehaviour is created
 
-    //PLayer Animtion states
+    //Player Animtion states
 
     Animator _animator;
     string _currentState;
     const string LEFT_STEP = "Left Step";
     const string RIGHT_STEP = "Right Step";
     const string STARTUP = "Start Up";
+    
     void Start()
     {
         _animator = gameObject.GetComponent<Animator>();
@@ -58,13 +59,6 @@ public class PlayerController : MonoBehaviour
             }
             
         }
-    }
-
-    void StepAnimation()
-    {
-        // This method can be used to handle step animations
-        // It can be called from TakeStep or other methods as needed
-        // For now, it is empty but can be implemented later
     }
 
     private void ChangeAnimationState(string newState)
