@@ -23,7 +23,7 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.UpArrow))
+        if (Input.GetKeyDown(KeyCode.W))
         {
             TakeStep(); // Call the method to take a step when the Up Arrow key is pressed
         }
