@@ -1,4 +1,5 @@
 using UnityEngine;
+using Unity.sceneManagement;
 
 public class PlayerController : MonoBehaviour
 {
@@ -23,9 +24,17 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.W))
+        if (SceneManager.GetActiveScene().name == "IntroScene")
         {
-            TakeStep(); // Call the method to take a step when the Up Arrow key is pressed
+            if (Input.GetKeyDown(KeyCode.W))
+            {
+                TakeStep(); // Call the method to take a step when the Up Arrow key is pressed
+            }
+        }
+
+        else
+        {
+            // In other scenes, you can implement different controls or logic
         }
     }
 
