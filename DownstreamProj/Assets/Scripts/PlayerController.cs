@@ -63,12 +63,12 @@ public class PlayerController : MonoBehaviour
                 {
                     Debug.Log("B key pressed - player is unbound");
                     _animator.SetBool("isBound", false);
+                    moveSpeed = 5f; // Reset movement speed when unbound
                     return;
                 }
                 else
                 {
-                    Debug.Log("B key pressed - player is bound");
-                    _animator.SetBool("isBound", true);
+                    BindPlayer();
                     return;
                 }
             }
@@ -76,6 +76,14 @@ public class PlayerController : MonoBehaviour
 
            
         }
+    }
+
+    public void BindPlayer()
+    {
+        Debug.Log("Player is now bound");
+        isBound = true;
+        _animator.SetBool("isBound", true);
+        moveSpeed = 10f; // Increase movement speed when bound
     }
 
     public void Move(InputAction.CallbackContext context)
