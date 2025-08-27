@@ -1,9 +1,18 @@
 using UnityEngine;
-using Unity.sceneManagement;
+using UnityEngine.SceneManagement;
+using UnityEngine.InputSystem;
 
 public class PlayerController : MonoBehaviour
 {
-    public int StepsTaken;
+    //General Movement 
+    [SerializeField] private float moveSpeed = 5f;
+    private Vector2 moveInput;
+    private Rigidbody2D rb;
+    public bool isBound = false;
+
+
+    //For intro Scene walking
+    private int StepsTaken;
     private bool FootOn = false; //Which foot the player should take next step with True = Right, False = Left
                                 // Start is called once before the first execution of Update after the MonoBehaviour is created
 
@@ -14,11 +23,20 @@ public class PlayerController : MonoBehaviour
     const string LEFT_STEP = "Left Step";
     const string RIGHT_STEP = "Right Step";
     const string STARTUP = "Start Up";
-    
+
     void Start()
     {
         _animator = gameObject.GetComponent<Animator>();
-        StepsTaken = 0;
+        if (SceneManager.GetActiveScene().name == "IntroScene")
+        {
+            StepsTaken = 0;
+        }
+
+        else
+        {
+            Debug.Log("not intro scene, should be able to move");
+            rb = gameObject.GetComponent<Rigidbody2D>();
+        }
     }
 
     // Update is called once per frame
@@ -34,11 +52,47 @@ public class PlayerController : MonoBehaviour
 
         else
         {
-            // In other scenes, you can implement different controls or logic
+            rb.linearVelocity = moveInput * moveSpeed;
+            isBound = _animator.GetBool("isBound");
+
+            //FOR TESTING PURPOSES - REMOVE LATER//
+            bool boundstate = _animator.GetBool("isBound");
+            if (Input.GetKeyDown(KeyCode.B))
+            {
+                if (boundstate)
+                {
+                    Debug.Log("B key pressed - player is unbound");
+                    _animator.SetBool("isBound", false);
+                    return;
+                }
+                else
+                {
+                    Debug.Log("B key pressed - player is bound");
+                    _animator.SetBool("isBound", true);
+                    return;
+                }
+            }
+            //Testing code ends here//
+
+           
         }
     }
 
-    void TakeStep()
+    public void Move(InputAction.CallbackContext context)
+    {
+        Debug.Log("Move input received: " + context.ReadValue<Vector2>());
+        _animator.SetBool("isWalking", true);
+        if (context.canceled)
+        {
+            _animator.SetBool("isWalking", false);
+            _animator.SetFloat("LastInputX", moveInput.x);
+            _animator.SetFloat("LastInputY", moveInput.y);
+        }
+        moveInput = context.ReadValue<Vector2>();
+        _animator.SetFloat("InputX", moveInput.x);
+        _animator.SetFloat("InputY", moveInput.y);
+    }
+     void TakeStep()
     {
         // This method can be used to encapsulate the step-taking logic
         // It can be called from Update or other methods as needed

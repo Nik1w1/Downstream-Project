@@ -1,0 +1,548 @@
+fileFormatVersion: 2
+guid: 55c6dcb3ae0a345af92b7be3ef466e26
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -3342177256911086961
+    second: tempspritesheet_unbound_0
+  - first:
+      213: 3343516627626134999
+    second: tempspritesheet_unbound_1
+  - first:
+      213: -3798201762908714552
+    second: tempspritesheet_unbound_2
+  - first:
+      213: -1540341016932425662
+    second: tempspritesheet_unbound_3
+  - first:
+      213: 8164726595637871063
+    second: tempspritesheet_unbound_4
+  - first:
+      213: 3011523588441254046
+    second: tempspritesheet_unbound_5
+  - first:
+      213: -945855801940487534
+    second: tempspritesheet_unbound_6
+  - first:
+      213: 8138411687920255133
+    second: tempspritesheet_unbound_7
+  - first:
+      213: -1006812093289020954
+    second: tempspritesheet_unbound_8
+  - first:
+      213: 5357488060101888649
+    second: tempspritesheet_unbound_9
+  - first:
+      213: -115606148417260280
+    second: tempspritesheet_unbound_10
+  - first:
+      213: 2971436928610589
+    second: tempspritesheet_unbound_11
+  - first:
+      213: -8135571288328473168
+    second: tempspritesheet_unbound_12
+  - first:
+      213: 206548241713123682
+    second: tempspritesheet_unbound_13
+  - first:
+      213: -2110041957758152162
+    second: tempspritesheet_unbound_14
+  - first:
+      213: -5801814161652651360
+    second: tempspritesheet_unbound_15
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: tempspritesheet_unbound_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1392
+        width: 369
+        height: 464
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f8adc611e733e91d0800000000000000
+      internalID: -3342177256911086961
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tempspritesheet_unbound_1
+      rect:
+        serializedVersion: 2
+        x: 369
+        y: 1392
+        width: 369
+        height: 464
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7dd844a78ae866e20800000000000000
+      internalID: 3343516627626134999
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tempspritesheet_unbound_2
+      rect:
+        serializedVersion: 2
+        x: 738
+        y: 1392
+        width: 369
+        height: 464
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8c94090de931a4bc0800000000000000
+      internalID: -3798201762908714552
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tempspritesheet_unbound_3
+      rect:
+        serializedVersion: 2
+        x: 1107
+        y: 1392
+        width: 369
+        height: 464
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 24067c4910c9f9ae0800000000000000
+      internalID: -1540341016932425662
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tempspritesheet_unbound_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 928
+        width: 369
+        height: 464
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7d10e25849fee4170800000000000000
+      internalID: 8164726595637871063
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tempspritesheet_unbound_5
+      rect:
+        serializedVersion: 2
+        x: 369
+        y: 928
+        width: 369
+        height: 464
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e9820c97fb41bc920800000000000000
+      internalID: 3011523588441254046
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tempspritesheet_unbound_6
+      rect:
+        serializedVersion: 2
+        x: 738
+        y: 928
+        width: 369
+        height: 464
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2925894d825afd2f0800000000000000
+      internalID: -945855801940487534
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tempspritesheet_unbound_7
+      rect:
+        serializedVersion: 2
+        x: 1107
+        y: 928
+        width: 369
+        height: 464
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d90cf5e9f4271f070800000000000000
+      internalID: 8138411687920255133
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tempspritesheet_unbound_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 464
+        width: 369
+        height: 464
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6e1c0f74cb51702f0800000000000000
+      internalID: -1006812093289020954
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tempspritesheet_unbound_9
+      rect:
+        serializedVersion: 2
+        x: 369
+        y: 464
+        width: 369
+        height: 464
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 98a05c6610f995a40800000000000000
+      internalID: 5357488060101888649
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tempspritesheet_unbound_10
+      rect:
+        serializedVersion: 2
+        x: 738
+        y: 464
+        width: 369
+        height: 464
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 805fcbd02d8456ef0800000000000000
+      internalID: -115606148417260280
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tempspritesheet_unbound_11
+      rect:
+        serializedVersion: 2
+        x: 1107
+        y: 464
+        width: 369
+        height: 464
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d113a92918e8a0000800000000000000
+      internalID: 2971436928610589
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tempspritesheet_unbound_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 369
+        height: 464
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0b570527405a81f80800000000000000
+      internalID: -8135571288328473168
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tempspritesheet_unbound_13
+      rect:
+        serializedVersion: 2
+        x: 369
+        y: 0
+        width: 369
+        height: 464
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 261da40188ecdd200800000000000000
+      internalID: 206548241713123682
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tempspritesheet_unbound_14
+      rect:
+        serializedVersion: 2
+        x: 738
+        y: 0
+        width: 369
+        height: 464
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e12d7a6d400a7b2e0800000000000000
+      internalID: -2110041957758152162
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tempspritesheet_unbound_15
+      rect:
+        serializedVersion: 2
+        x: 1107
+        y: 0
+        width: 369
+        height: 464
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0aaecd162c0db7fa0800000000000000
+      internalID: -5801814161652651360
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: c5bf334eec1594ecf947481050a78b53
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":369.0,"y":464.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":1,"keepEmptyRects":false,"isAlternate":false}'
+    nameFileIdTable:
+      tempspritesheet_unbound_0: -3342177256911086961
+      tempspritesheet_unbound_1: 3343516627626134999
+      tempspritesheet_unbound_10: -115606148417260280
+      tempspritesheet_unbound_11: 2971436928610589
+      tempspritesheet_unbound_12: -8135571288328473168
+      tempspritesheet_unbound_13: 206548241713123682
+      tempspritesheet_unbound_14: -2110041957758152162
+      tempspritesheet_unbound_15: -5801814161652651360
+      tempspritesheet_unbound_2: -3798201762908714552
+      tempspritesheet_unbound_3: -1540341016932425662
+      tempspritesheet_unbound_4: 8164726595637871063
+      tempspritesheet_unbound_5: 3011523588441254046
+      tempspritesheet_unbound_6: -945855801940487534
+      tempspritesheet_unbound_7: 8138411687920255133
+      tempspritesheet_unbound_8: -1006812093289020954
+      tempspritesheet_unbound_9: 5357488060101888649
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

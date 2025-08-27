@@ -3,7 +3,11 @@ using UnityEngine.UI;
 
 public class Bind : MonoBehaviour
 {
-
+    [Header("Accessing Bound State from PlayerController")]
+    public GameObject Player; //Attatch the Player GameObject in the Inspector
+    private PlayerController playerControllerScript; // Reference to the PlayerController script
+    private bool isBound = false; // Variable to track bound state, should be accessed from PlayerController
+    
     Animator _animator;
     string _currentState;
     const string BIND = "BindStart";
@@ -11,11 +15,15 @@ public class Bind : MonoBehaviour
     void Start()
     {
         _animator = gameObject.GetComponent<Animator>();
+        playerControllerScript = Player.GetComponent<PlayerController>();
+        isBound = playerControllerScript.isBound; // Initialize isBound from PlayerController
     }
 
     // Update is called once per frame
     void Update()
     {
+        isBound = playerControllerScript.isBound; // Update isBound from PlayerController
+        _animator.SetBool("isBound", isBound);
 
     }
 
