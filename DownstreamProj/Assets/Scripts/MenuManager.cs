@@ -31,9 +31,6 @@ public class MenuManager : MonoBehaviour
             GameIsPaused = false;
             AS_MenuTheme.volume = 0f;
         }
-
-
-
     }
     void Update()
     {
@@ -74,6 +71,12 @@ public class MenuManager : MonoBehaviour
     public void Play()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+    }
+
+    public void LoadMenu()
+    {
+        Time.timeScale = 1f; //Resumes time at normal speed
+        SceneManager.LoadScene("MainMenu");
     }
 
     public void Quit()
