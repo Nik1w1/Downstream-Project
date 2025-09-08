@@ -163,6 +163,8 @@ public class PlayerController : MonoBehaviour
         }
     }
 
+    /** I realized I dont need this method... the camera stops annyways
+
     void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.gameObject.CompareTag("Boundary"))
@@ -179,6 +181,7 @@ public class PlayerController : MonoBehaviour
             Debug.Log("Player exited boundary, camera follow enabled");
         }
     }
+    **/
 
 }
     
