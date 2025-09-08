@@ -11,6 +11,8 @@ public class MenuManager : MonoBehaviour
     [Header("Audio Stuff")]
     public GameObject MenuTheme; //attach menu theme here
     AudioSource AS_MenuTheme;
+    float pause_fadetime = 1f; 
+    
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
 
@@ -45,7 +47,10 @@ public class MenuManager : MonoBehaviour
                 }
                 else
                 {
-                    Pause();
+                    if (AS_MenuTheme.volume == 0f)
+                    {
+                        Pause();
+                    }
                 }
             }
         }
@@ -54,7 +59,7 @@ public class MenuManager : MonoBehaviour
     public void Resume()
     {
         pauseMenuUI.SetActive(false);
-        StartCoroutine(FadeOut(AS_MenuTheme, 1f)); //fading out for 1 seconds
+        StartCoroutine(FadeOut(AS_MenuTheme, pause_fadetime)); //fading out for 1 seconds
         Time.timeScale = 1f; //Resumes time at normal speed
         GameIsPaused = false;
     }
@@ -76,7 +81,7 @@ public class MenuManager : MonoBehaviour
         Application.Quit();
         Debug.Log("Game is quitting");
     }
-    
+
     public static IEnumerator FadeOut(AudioSource audioSource, float FadeTime)
     {
         float startVolume = audioSource.volume;
@@ -87,9 +92,10 @@ public class MenuManager : MonoBehaviour
 
             yield return null;
         }
-
+        /**
         audioSource.Stop();
         audioSource.volume = startVolume;
+        **/
     }
 
     public static IEnumerator FadeIn(AudioSource audioSource, float FadeTime)
