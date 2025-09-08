@@ -9,12 +9,14 @@ public class PlayerController : MonoBehaviour
     private Vector2 moveInput;
     private Rigidbody2D rb;
     public bool isBound = false;
+    public bool cameraFollow = true; //Referenced by CameraController script to check if it should follow the player
+    //Set to false if player hits the scene boundary. 
 
 
     //For intro Scene walking
     private int StepsTaken;
     private bool FootOn = false; //Which foot the player should take next step with True = Right, False = Left
-                                // Start is called once before the first execution of Update after the MonoBehaviour is created
+                                 // Start is called once before the first execution of Update after the MonoBehaviour is created
 
     //Player Animtion states
 
@@ -74,7 +76,7 @@ public class PlayerController : MonoBehaviour
             }
             //Testing code ends here//
 
-           
+
         }
     }
 
@@ -88,7 +90,7 @@ public class PlayerController : MonoBehaviour
 
     public void Move(InputAction.CallbackContext context)
     {
-        Debug.Log("Move input received: " + context.ReadValue<Vector2>());
+        //Debug.Log("Move input received: " + context.ReadValue<Vector2>());
         _animator.SetBool("isWalking", true);
         if (context.canceled)
         {
@@ -100,7 +102,7 @@ public class PlayerController : MonoBehaviour
         _animator.SetFloat("InputX", moveInput.x);
         _animator.SetFloat("InputY", moveInput.y);
     }
-     void TakeStep()
+    void TakeStep()
     {
         // This method can be used to encapsulate the step-taking logic
         // It can be called from Update or other methods as needed
@@ -114,7 +116,7 @@ public class PlayerController : MonoBehaviour
                 return; // Skip the rest of the method for the first step
             }
             else
-            { 
+            {
                 if (FootOn)
                 {
                     Debug.Log("Right foot forward");
@@ -128,7 +130,7 @@ public class PlayerController : MonoBehaviour
                     FootOn = true; // Switch to right foot for next step
                 }
             }
-            
+
         }
     }
 
@@ -158,6 +160,23 @@ public class PlayerController : MonoBehaviour
         else
         {
             return false;
+        }
+    }
+
+    void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.CompareTag("Boundary"))
+        {
+            cameraFollow = false;
+            Debug.Log("Player hit boundary, camera follow disabled");
+        }
+    }
+    void OnCollisionExit2D(Collision2D collision)
+    {
+        if (collision.gameObject.CompareTag("Boundary"))
+        {
+            cameraFollow = true;
+            Debug.Log("Player exited boundary, camera follow enabled");
         }
     }
 
